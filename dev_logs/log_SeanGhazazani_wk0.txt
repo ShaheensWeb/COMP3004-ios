@@ -1,0 +1,11 @@
+Week 0 - We spoke about the app and defined it. Decided to call it "Sanity Check"
+an application that will plug WatchKit3 for iOS (Thankfully I have a Iwatch, and a Iphone)
+
+Monitoring heart rate over a period of 5 mins, then proceeding to tell the user to ingest
+alcohol for 1 min, then proceeding to monitor the average heart rate for 5 mins, ultimately
+picking up on a difference/change.
+
+
+-- Also split up remainder of D1 work.
+Reference: https://www.youtube.com/watch?v=r6WQEGULvH8
+
