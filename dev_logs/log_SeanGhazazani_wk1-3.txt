@@ -1,0 +1,9 @@
+S#: 100888025
+
+Spent a lot of time researching WATCHKIT OS 2 and the compatability with heart rate. Also spent time looking into
+the science behinf the study, how I will be able to capture this all in the app. Original estimation I see it being 
+around 10 slides possibly max, 10 different view points when drawn out. Will be pushing the xcode project, for now 
+SanityCheck is just a hello world project and pushed. 
+
+Will be finishing the watch sync soon, and get the heart rate monitored in real time then go over
+recording averages over a length of time. 
