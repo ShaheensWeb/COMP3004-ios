@@ -1,0 +1,1 @@
+Farmilierized myself with xcode IDE and did some online swift learning, watched videos did examples etc, we got a hello world app made for both iphone and watch. 

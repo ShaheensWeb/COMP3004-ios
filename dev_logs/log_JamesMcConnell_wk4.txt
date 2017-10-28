@@ -1,0 +1,1 @@
+More learning swift and following guides, found a guide on healthkit permissions, got an example of an app that can pair with a watch up
