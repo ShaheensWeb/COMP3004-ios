@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B6D1FD0E08FF0C944661E9F7F26694377475C1CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B6D1FD0E08FF0C944661E9F7F26694377475C1CA" : 9223372036854775807,
+    "EB85362A436BBA2FDF9D60D5818D3F239102C01F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3AE7671-AE0B-4B14-A344-E8BEA6C3C20C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B6D1FD0E08FF0C944661E9F7F26694377475C1CA" : "COMP3004-ios\/",
+    "EB85362A436BBA2FDF9D60D5818D3F239102C01F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "safetyCheck",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "safetyCheck\/safetyCheck.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShaheensWeb\/COMP3004-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6D1FD0E08FF0C944661E9F7F26694377475C1CA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jamesjmcconnell\/comp3004ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB85362A436BBA2FDF9D60D5818D3F239102C01F"
+    }
+  ]
+}
