@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB01A3BE1FA8272C00311F5F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01A3BD1FA8272C00311F5F /* HealthKit.framework */; };
 		BB444C1E1FA7EFDD00BBDC9B /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C1D1FA7EFDD00BBDC9B /* WorkoutManager.swift */; };
 		BB444C221FA7F12000BBDC9B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB444C211FA7F12000BBDC9B /* HealthKit.framework */; };
 		BB444C241FA7F1F300BBDC9B /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */; };
@@ -87,6 +88,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB01A3BC1FA8272C00311F5F /* safeStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = safeStart.entitlements; sourceTree = "<group>"; };
+		BB01A3BD1FA8272C00311F5F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BB444C1D1FA7EFDD00BBDC9B /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		BB444C1F1FA7F12000BBDC9B /* safeStart WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "safeStart WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		BB444C211FA7F12000BBDC9B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB01A3BE1FA8272C00311F5F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,7 @@
 		BB444C201FA7F12000BBDC9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB01A3BD1FA8272C00311F5F /* HealthKit.framework */,
 				BB444C211FA7F12000BBDC9B /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -189,6 +194,7 @@
 		BB600DF41FA7959A00C5EF70 /* safeStart */ = {
 			isa = PBXGroup;
 			children = (
+				BB01A3BC1FA8272C00311F5F /* safeStart.entitlements */,
 				BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */,
 				BB600DF71FA7959A00C5EF70 /* ViewController.swift */,
 				BB600DF91FA7959A00C5EF70 /* Main.storyboard */,
@@ -361,6 +367,14 @@
 						DevelopmentTeam = 4GZAW9UKYC;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					BB600E051FA7959A00C5EF70 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -743,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = safeStart/safeStart.entitlements;
 				DEVELOPMENT_TEAM = 4GZAW9UKYC;
 				INFOPLIST_FILE = safeStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -757,6 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = safeStart/safeStart.entitlements;
 				DEVELOPMENT_TEAM = 4GZAW9UKYC;
 				INFOPLIST_FILE = safeStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

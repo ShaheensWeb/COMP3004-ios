@@ -5,7 +5,7 @@
 //  Created by Shaheen Ghazazani on 2017-10-30.
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
-import Foundation
+
 import WatchKit
 
 class InterfaceController: WKInterfaceController {
@@ -27,6 +27,8 @@ class InterfaceController: WKInterfaceController {
         // Configure workout manager.
         workoutManager.delegate = self
     }
+    
+    // MARK: - Actions
     
     @IBAction func didTapButton() {
         switch workoutManager.state {
@@ -58,4 +60,3 @@ extension InterfaceController: WorkoutManagerDelegate {
     }
     
 }
-

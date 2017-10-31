@@ -6,7 +6,6 @@
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
-import Foundation
 import HealthKit
 
 typealias HKQueryUpdateHandler = ((HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, Error?) -> Swift.Void)
@@ -98,6 +97,4 @@ class HeartRateManager {
         let newHeartRate = HeartRate(timestamp: timestamp, bpm: count)
         delegate?.heartRate(didChangeTo: newHeartRate)
     }
-    
-    
 }

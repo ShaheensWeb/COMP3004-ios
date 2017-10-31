@@ -16,6 +16,9 @@
                     <items>
                         <label alignment="center" verticalAlignment="bottom" text="Press start when ready" textAlignment="left" minimumScaleFactor="0.5" id="1cu-pe-eOY"/>
                         <label alignment="center" text="Heart Rate" id="Zgp-bg-5kU"/>
+                        <label alignment="right" text="BPM" id="Mce-9F-nAr">
+                            <accessibilityTraits key="accessibilityTraits" staticText="YES" notEnabled="YES"/>
+                        </label>
                         <button width="1" alignment="center" verticalAlignment="center" title="Start" id="EWE-80-nz5">
                             <connections>
                                 <action selector="didTapButton" destination="AgC-eL-Hgc" id="rQT-H3-Nul"/>

@@ -6,7 +6,6 @@
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
-import Foundation
 import HealthKit
 
 class AuthorizationManager {
@@ -44,3 +43,4 @@ class AuthorizationManager {
     }
     
 }
+

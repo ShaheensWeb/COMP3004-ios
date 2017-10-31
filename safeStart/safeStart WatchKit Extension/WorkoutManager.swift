@@ -1,9 +1,9 @@
 //
 //  WorkoutManager.swift
-//  Heart Control
+//  safeStart WatchKit Extension
 //
-//  Created by Thomas Paul Mann on 01/08/16.
-//  Copyright © 2016 Thomas Paul Mann. All rights reserved.
+//  Created by Shaheen Ghazazani on 2017-10-30.
+//  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
 import HealthKit
@@ -143,3 +143,4 @@ extension WorkoutManager: HeartRateManagerDelegate {
     }
     
 }
+
