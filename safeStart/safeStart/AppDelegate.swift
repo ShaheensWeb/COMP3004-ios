@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  safeStart
 //
-//  Created by Shaheen Ghazazani on 2017-10-30.
+//  Created by Shaheen Ghazazani on 2017-10-24.
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
@@ -12,14 +12,10 @@ import HealthKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    // MARK: - Properties
-    
     private let healthStore = HKHealthStore()
     
     var window: UIWindow?
-    
-    // MARK: - Lifecycle
-    
+        
     private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true
     }

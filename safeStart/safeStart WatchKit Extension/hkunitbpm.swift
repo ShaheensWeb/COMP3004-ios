@@ -1,5 +1,5 @@
 //
-//  HKUnit+BeatPerMinute.swift
+//  hkunitbpm.swift
 //  safeStart WatchKit Extension
 //
 //  Created by Shaheen Ghazazani on 2017-10-30.

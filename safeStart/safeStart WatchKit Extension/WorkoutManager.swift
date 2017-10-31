@@ -2,7 +2,7 @@
 //  WorkoutManager.swift
 //  safeStart WatchKit Extension
 //
-//  Created by Shaheen Ghazazani on 2017-10-30.
+//  Created by Shaheen Ghazazani on 2017-10-24.
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
@@ -35,9 +35,7 @@ protocol WorkoutManagerDelegate: class {
 }
 
 class WorkoutManager: NSObject {
-    
-    // MARK: - Properties
-    
+
     private let healthStore = HKHealthStore()
     fileprivate let heartRateManager = HeartRateManager()
     
@@ -47,8 +45,6 @@ class WorkoutManager: NSObject {
     
     private var session: HKWorkoutSession?
     
-    // MARK: - Initialization
-    
     override init() {
         super.init()
         
@@ -56,19 +52,15 @@ class WorkoutManager: NSObject {
         heartRateManager.delegate = self
     }
     
-    // MARK: - Public API
-    
     func start() {
         // If we have already started the workout, then do nothing.
         if (session != nil) {
-            // Another workout is running.
+            // workout is running already in another session
             return
         }
         
         // Configure the workout session.
         let workoutConfiguration = HKWorkoutConfiguration()
-        workoutConfiguration.activityType = .other
-        workoutConfiguration.locationType = .indoor
         
         // Create workout session.
         do {

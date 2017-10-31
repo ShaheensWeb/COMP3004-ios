@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  safeStart WatchKit Extension
 //
-//  Created by Shaheen Ghazazani on 2017-10-30.
+//  Created by Shaheen Ghazazani on 2017-10-24.
 //  Copyright © 2017 Shaheen Ghazazani. All rights reserved.
 //
 
@@ -10,25 +10,16 @@ import WatchKit
 
 class InterfaceController: WKInterfaceController {
     
-    // MARK: - Outlets
     
     @IBOutlet var heartRateLabel: WKInterfaceLabel!
     @IBOutlet var controlButton: WKInterfaceButton!
     
-    // MARK: - Properties
-    
     private let workoutManager = WorkoutManager()
-    
-    // MARK: - Lifecycle
     
     override func willActivate() {
         super.willActivate()
-        
-        // Configure workout manager.
         workoutManager.delegate = self
     }
-    
-    // MARK: - Actions
     
     @IBAction func didTapButton() {
         switch workoutManager.state {
@@ -42,10 +33,7 @@ class InterfaceController: WKInterfaceController {
             break
         }
     }
-    
 }
-
-// MARK: - Workout Manager Delegate
 
 extension InterfaceController: WorkoutManagerDelegate {
     

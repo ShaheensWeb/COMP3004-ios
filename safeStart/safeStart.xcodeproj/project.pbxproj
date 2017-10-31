@@ -12,8 +12,8 @@
 		BB444C221FA7F12000BBDC9B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB444C211FA7F12000BBDC9B /* HealthKit.framework */; };
 		BB444C241FA7F1F300BBDC9B /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */; };
 		BB444C261FA7F24400BBDC9B /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C251FA7F24400BBDC9B /* HeartRate.swift */; };
-		BB444C281FA7F28400BBDC9B /* HKUnit+BeatsPerMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C271FA7F28400BBDC9B /* HKUnit+BeatsPerMinute.swift */; };
-		BB444C2A1FA7F35000BBDC9B /* AuthorizationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C291FA7F35000BBDC9B /* AuthorizationManger.swift */; };
+		BB444C281FA7F28400BBDC9B /* hkunitbpm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C271FA7F28400BBDC9B /* hkunitbpm.swift */; };
+		BB444C2A1FA7F35000BBDC9B /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C291FA7F35000BBDC9B /* AuthorizationManager.swift */; };
 		BB600DF61FA7959A00C5EF70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */; };
 		BB600DF81FA7959A00C5EF70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB600DF71FA7959A00C5EF70 /* ViewController.swift */; };
 		BB600DFB1FA7959A00C5EF70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB600DF91FA7959A00C5EF70 /* Main.storyboard */; };
@@ -95,8 +95,8 @@
 		BB444C211FA7F12000BBDC9B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
 		BB444C251FA7F24400BBDC9B /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
-		BB444C271FA7F28400BBDC9B /* HKUnit+BeatsPerMinute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKUnit+BeatsPerMinute.swift"; sourceTree = "<group>"; };
-		BB444C291FA7F35000BBDC9B /* AuthorizationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManger.swift; sourceTree = "<group>"; };
+		BB444C271FA7F28400BBDC9B /* hkunitbpm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hkunitbpm.swift; sourceTree = "<group>"; };
+		BB444C291FA7F35000BBDC9B /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
 		BB600DF21FA7959A00C5EF70 /* safeStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safeStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB600DF71FA7959A00C5EF70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -241,9 +241,9 @@
 				BB444C1D1FA7EFDD00BBDC9B /* WorkoutManager.swift */,
 				BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */,
 				BB600E321FA7959A00C5EF70 /* ExtensionDelegate.swift */,
-				BB444C291FA7F35000BBDC9B /* AuthorizationManger.swift */,
+				BB444C291FA7F35000BBDC9B /* AuthorizationManager.swift */,
 				BB444C251FA7F24400BBDC9B /* HeartRate.swift */,
-				BB444C271FA7F28400BBDC9B /* HKUnit+BeatsPerMinute.swift */,
+				BB444C271FA7F28400BBDC9B /* hkunitbpm.swift */,
 				BB600E341FA7959A00C5EF70 /* NotificationController.swift */,
 				BB600E361FA7959A00C5EF70 /* Assets.xcassets */,
 				BB600E381FA7959A00C5EF70 /* Info.plist */,
@@ -506,14 +506,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB444C281FA7F28400BBDC9B /* HKUnit+BeatsPerMinute.swift in Sources */,
+				BB444C281FA7F28400BBDC9B /* hkunitbpm.swift in Sources */,
 				BB600E351FA7959A00C5EF70 /* NotificationController.swift in Sources */,
 				BB444C1E1FA7EFDD00BBDC9B /* WorkoutManager.swift in Sources */,
 				BB600E331FA7959A00C5EF70 /* ExtensionDelegate.swift in Sources */,
 				BB600E311FA7959A00C5EF70 /* InterfaceController.swift in Sources */,
 				BB444C261FA7F24400BBDC9B /* HeartRate.swift in Sources */,
 				BB444C241FA7F1F300BBDC9B /* HeartRateManager.swift in Sources */,
-				BB444C2A1FA7F35000BBDC9B /* AuthorizationManger.swift in Sources */,
+				BB444C2A1FA7F35000BBDC9B /* AuthorizationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,7 +764,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CARLETON.safeStart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -779,7 +779,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CARLETON.safeStart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
