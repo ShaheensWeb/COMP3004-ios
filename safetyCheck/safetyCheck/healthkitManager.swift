@@ -21,7 +21,7 @@ class HelthkitManager{
 
     func authorizeHealthkit() -> Bool{
         
-        var isEnabled = true; //default assumption is the were authourized, will change in future
+        var isEnabled = true; //default assumption is that we're authourized, will change in future
         
         if HKHealthStore.isHealthDataAvailable(){
 
