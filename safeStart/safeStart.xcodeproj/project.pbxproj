@@ -109,7 +109,7 @@
 		BB600E0C1FA7959A00C5EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB600E111FA7959A00C5EF70 /* safeStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safeStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB600E151FA7959A00C5EF70 /* safeStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safeStartUITests.swift; sourceTree = "<group>"; };
-		BB600E171FA7959A00C5EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB600E171FA7959A00C5EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../safeStartUITests/Info.plist; sourceTree = "<group>"; };
 		BB600E1A1FA7959A00C5EF70 /* safeStart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "safeStart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB600E201FA7959A00C5EF70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		BB600E221FA7959A00C5EF70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 		BB600E141FA7959A00C5EF70 /* safeStartUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BB444C1F1FA7F12000BBDC9B /* safeStart WatchKit Extension.entitlements */,
 				BB600E151FA7959A00C5EF70 /* safeStartUITests.swift */,
-				BB600E171FA7959A00C5EF70 /* Info.plist */,
 			);
 			path = safeStartUITests;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 		BB600E2D1FA7959A00C5EF70 /* safeStart WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BB444C1F1FA7F12000BBDC9B /* safeStart WatchKit Extension.entitlements */,
+				BB600E171FA7959A00C5EF70 /* Info.plist */,
 				BB600E301FA7959A00C5EF70 /* InterfaceController.swift */,
 				BB444C1D1FA7EFDD00BBDC9B /* WorkoutManager.swift */,
 				BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */,
