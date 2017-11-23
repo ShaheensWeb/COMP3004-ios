@@ -1,0 +1,3 @@
+Finished designing the way the UI will flow, found a resource for making a information disclosure disclaimer so i used that to make one, will put that into the UI at a later date
+
+We spent some time trying to work out an annoying bug with healthkit together.
