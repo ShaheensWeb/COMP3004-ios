@@ -1,0 +1,2 @@
+Made rough screens for each UI screen, im sure theyll change in the future but had to make rough versions for the demo.
+Sean solved the healthkit bug so that should let us connect the UI to real heart rate data soon, for now the ui has mock data but has a screen for it.
