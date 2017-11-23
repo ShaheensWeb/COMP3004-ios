@@ -1,0 +1,1 @@
+made the safety warnings UI screens for the beginning of the app, started the architecture document and reorganized some code to better fit "real" design patterns. I reorganized them based on the functionality being improved by taking advantage of the patterns not just for the sake of it of course.
