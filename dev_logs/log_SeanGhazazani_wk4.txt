@@ -1,13 +1,12 @@
-Week 4 -
-
-A lot more research done on watchkit OS, learned about how
-the code base works
-
-links to above:https://developer.apple.com/library/content/documentation/General/Conceptual/WatchKitProgrammingGuide/ConfiguringYourXcodeProject.html
-
-A lot more watch kit guides, youtube videos, and I have successfully launched the iWatch simulator to just say my name.
-
-Next I will progress today, to make it say "Start" on the button after launching the iOS app, record your heart rate
-for 1 min and vomit the average over the minute back to you. Doing this 3 times, printing the values. 
+Week 4 - COMP 3004
 
 
+This week I went over a lot of actually beginning implementation. Looking at the 
+possible presentations and began writing my first bit of code. 
+
+I had to learn online about the storyboard, using youtube guides really
+about dragging and dropping modal buttons, creating views that push to other views
+(the previous version is now deprecated use to just be a push() function you clicked after dropping)
+
+But finally some coding, and I began to feel like I really understand how iOS apps are mode, like how
+other applications have loading icons via the loading storyboard view, and a lot more. Can't wait to continue.

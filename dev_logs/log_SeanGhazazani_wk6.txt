@@ -1,0 +1,10 @@
+Week 6 - COMP 3004
+
+
+Solved the healthkit issue partially, looked it up online and found that this is really just a genuine
+bug with being on the most up-to-date version of iWatch/iOS/xCode so I found a workout by placing
+a request for the healthkit in the iwatch instead of the iphone, and building it. Seems to have
+a bit of a performance hit, but honestly not else sure how to meet the requirement of demo'ing on a physical device.
+
+Beyond that I believe me and James have almost fully flushed out what we want the end concept of the UI to look like in best case,
+the possible warnings we need to due this application including consumption of alcohol to ofcourse, test alcoholism, and much more. 

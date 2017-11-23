@@ -1,0 +1,17 @@
+Week 7 - Sean Ghazazani - COMP3004 Logs
+
+Finally got the watch taking information that is real, this took about honestly sadly to say
+5-6 hours to get off mock data and using real data.
+
+It was honestly a 3am and im just grinning like a mad man because I thought
+for the longest time I wouldn't be able to get the only thing I need to make this 
+application process. 
+
+From this point onward I can proudly state this iwatch application is pretty much achieveing
+what the heart rate app on the iwatch does, reporting your heart rate back minus all the cool
+notifications for hitting benchmarks like 160, or 180 BPM. 
+
+Now we begin flushing the UI, and most importantly seeing if its possible to time the heart
+rate beyond just flushing it. Also the iPhone now that it doesn't request healthkit data
+or have any UI really beyond saying go to watch needs to be flushed with a warning and a 
+age check, and more as stated in previous weekly logs.

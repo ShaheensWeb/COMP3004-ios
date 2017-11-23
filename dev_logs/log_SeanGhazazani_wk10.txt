@@ -1,0 +1,30 @@
+Week 10 - COMP 3004
+
+
+Follow up from last times research and the answers:
+
+
+(1) -> how do I get the data to be shown on the users iphone screen while they do the test aka passing the data back to
+make the iphone screen atleast functional and useful during the test beyond the age check, and explanation. 
+
+Still no luck, this is begining to be harder then I thought. Seems like they are really fully seperate apps and communication
+is hard to understand. 
+
+(2) -> how to time Heart rate data thats incoming over a min, stop after the minute and get the average, and do this one
+other time after the user consumes alcohol
+
+Still no luck, but did create a functional timer so I can atleast make the user see a UI screen with a timer once they hit
+start app so they know how long it takes even if the iphone doesnt show there heart rate, it can show the timer while i Iwatch
+shows the user there heart rate for that indivudal minute, hopefully after the minute I can sync with (1) above to get the iphone
+returning the final avg to that screen before the user begins consuming alcohol, and test phase 2 occurs. 
+
+(3) -> what benchmark #'s determine "alcoholism" aka 20% increase, 25% increase, so on so forth.
+
+Seems to be anything beyond a 10-15% increase, is a safe bet. Once again the intro explanation explains how
+this test can be butchered by running on spot or anything, but if the user follows rules and still gets an increased
+heart rate even though the consumed alcohol is naturally a sepressent would confirm i guess "green"
+ for alcoholism, if heart rate is between - infinity to 10% bigger, they should be fine and be considered negligible. 
+
+From now on out of fear of not meeting requirements im purely focused on completion of the APPS requirements
+and getting the timed heart rate data back, doing this twice and finally a green and red screen would
+allow us to completion. 

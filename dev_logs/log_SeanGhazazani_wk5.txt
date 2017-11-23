@@ -1,0 +1,11 @@
+Week 5 - COMP 3004
+
+
+Began testing the watch via paying for the 99$ iOS fee and using a physical device can't seem to get
+the iwatch to request the HealthKit data from the users watch, this debugging found no success for over 2 hours. 
+
+I'm not quite sure why, continued work on the UI and began drawing out the final concept views.
+
+Flushing out whats possible and whats not, now that we have lost 50% of our group after they have been missing for 2-3 weeks. 
+
+It's going to be a long semester. 

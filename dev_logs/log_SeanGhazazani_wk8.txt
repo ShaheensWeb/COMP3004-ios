@@ -1,0 +1,12 @@
+Week 8 - Sean Ghazazani - COMP3004 Logs
+
+This week flushed UI out for the iPhone, and swapped the healthkit request stuff back to the iPhone in an attempt
+to test the previous bug found in week3-4 with the issue of getting the users health kit data to be turned on
+so that HKWorkoutSession is initializable from the WorkoutManager. 
+
+The UI for the iphone still needs more work and I'm completely lost on 
+getting the HeartRate to be recorded over averages of 1 min, the data seems to come in every 5 seconds
+but I cant seem to make a timed look or a timer, will need more research for creating TIMED Heart rate data
+as nowhere online seems to be able to help me in atleast instructing me. 
+
+A loss of functionality seems to occur everytime, but will continue pushing. 

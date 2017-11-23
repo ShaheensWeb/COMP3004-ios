@@ -1,0 +1,14 @@
+
+Week 4 -
+
+A lot more research done on watchkit OS, learned about how
+the code base works
+
+links to above:https://developer.apple.com/library/content/documentation/General/Conceptual/WatchKitProgrammingGuide/ConfiguringYourXcodeProject.html
+
+A lot more watch kit guides, youtube videos, and I have successfully launched the iWatch simulator to just say my name.
+
+Next I will progress today, to make it say "Start" on the button after launching the iOS app, record your heart rate
+for 1 min and vomit the average over the minute back to you. Doing this 3 times, printing the values. 
+
+

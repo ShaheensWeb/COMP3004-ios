@@ -1,0 +1,16 @@
+Week 9 - COMP 3004
+
+The iphone has a complete age check, that does not allow the user to continue without it (needs a bit of actual prettier designs still), 
+secondly the iphone has a guide on the application works, once again not that aesthetic since were only 2 team members design has been
+sacrificed in purely trying to meet the requirements in the given time period. 
+
+After that began researching really three topics
+(1) -> how do I get the data to be shown on the users iphone screen while they do the test aka passing the data back to
+make the iphone screen atleast functional and useful during the test beyond the age check, and explanation. 
+(2) -> how to time Heart rate data thats incoming over a min, stop after the minute and get the average, and do this one
+other time after the user consumes alcohol
+(3) -> what benchmark #'s determine "alcoholism" aka 20% increase, 25% increase, so on so forth.
+
+If I can fully complete the 3 things above the application is pretty much done fully, but to be honest im really
+scared about #2. 
+
