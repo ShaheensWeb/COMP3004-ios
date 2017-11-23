@@ -1,0 +1,1 @@
+This week i made a timer to see how that works and to see if we can use the timer to terminate the workout session, i dont think it is possible with our current design but im looking into other implementations on github and see if i can find an example.
