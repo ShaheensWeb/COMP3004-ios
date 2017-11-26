@@ -124,6 +124,50 @@
             <point key="canvasLocation" x="1808.8" y="574.36281859070471"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Xwg-ls-Vmd">
+            <objects>
+                <viewController id="kbW-BE-Xh9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hkp-Db-FX0"/>
+                        <viewControllerLayoutGuide type="bottom" id="dAe-73-eCK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xvo-pm-5vv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-8F-keW">
+                                <rect key="frame" x="16" y="111" width="343" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-LB-PLE">
+                                <rect key="frame" x="89" y="430" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="ofo-r6-S4z" eventType="touchUpInside" id="WHl-xC-xYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0Q-7M-ufW">
+                                <rect key="frame" x="256" y="430" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="ofo-r6-S4z" eventType="touchUpInside" id="pUA-xv-6u9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51V-Z6-Ygc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ofo-r6-S4z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="574.36281859070471"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="NPJ-yC-pL2">
             <objects>
                 <viewController id="MYy-hc-fjv" sceneMemberID="viewController">
