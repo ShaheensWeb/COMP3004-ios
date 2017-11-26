@@ -148,6 +148,7 @@
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButton:" destination="ofo-r6-S4z" eventType="touchUpInside" id="WHl-xC-xYq"/>
+                                    <action selector="startButtonTapped:" destination="ofo-r6-S4z" eventType="touchUpInside" id="cBt-4V-WSR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0Q-7M-ufW">

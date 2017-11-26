@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     var timer = Timer()
     var isTimerRunning = false
     
-    @IBAction func startButton(_ sender: Any) {
+    @IBAction func startButtonTapped(_ sender: Any) {
+        if isTimerRunning == false {
+            runTimer()
+        }
     }
     @IBAction func stopButton(_ sender: Any) {
     }
@@ -32,6 +35,12 @@ class ViewController: UIViewController {
             timerLabel.text = timeString(time: TimeInterval(seconds))
             timerLabel.text = String(seconds)
         }
+    }
+    func timeString(time:TimeInterval) -> String {
+        let hours = Int(time) / 3600
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
