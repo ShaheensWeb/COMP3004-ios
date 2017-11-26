@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     @objc func updateTimer() {
         if seconds < 1 {
             timer.invalidate()
-            //Send alert to indicate time's up.
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
