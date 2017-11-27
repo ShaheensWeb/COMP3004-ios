@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -136,17 +135,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-8F-keW">
-                                <rect key="frame" x="16" y="96" width="343" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="EzH-0R-0rh"/>
-                                </constraints>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-8F-keW">
+                                <rect key="frame" x="16" y="96" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-LB-PLE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-LB-PLE">
                                 <rect key="frame" x="164" y="437" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButton:" destination="ofo-r6-S4z" eventType="touchUpInside" id="WHl-xC-xYq"/>
@@ -156,13 +154,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Sgr-8F-keW" firstAttribute="top" secondItem="hkp-Db-FX0" secondAttribute="bottom" constant="76" id="82k-2h-Pdl"/>
-                            <constraint firstItem="Sgr-8F-keW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xvo-pm-5vv" secondAttribute="leadingMargin" id="Kka-kn-sDj"/>
-                            <constraint firstItem="Sgr-8F-keW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xvo-pm-5vv" secondAttribute="trailingMargin" id="qEQ-eW-UZg"/>
-                            <constraint firstItem="Sgr-8F-keW" firstAttribute="centerX" secondItem="bjc-LB-PLE" secondAttribute="centerX" id="tSW-Cq-pDK"/>
-                            <constraint firstItem="dAe-73-eCK" firstAttribute="top" secondItem="bjc-LB-PLE" secondAttribute="bottom" constant="200" id="wVZ-jO-An0"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="timerLabel" destination="Sgr-8F-keW" id="auK-af-Y2O"/>
