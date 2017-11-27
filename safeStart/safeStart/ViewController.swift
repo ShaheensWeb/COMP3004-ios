@@ -20,8 +20,6 @@ class ViewController: UIViewController {
             runTimer()
         }
     }
-    @IBAction func stopButton(_ sender: Any) {
-    }
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
@@ -34,6 +32,31 @@ class ViewController: UIViewController {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
             timerLabel.text = String(seconds)
+        }
+    }
+    
+    @IBOutlet weak var timerLabel2: UILabel!
+    var seconds2 = 180
+    var timer2 = Timer()
+    var isTimerRunning2 = false
+    
+    @IBAction func startButtonTapped2(_ sender: Any) {
+        if isTimerRunning2 == false {
+            runTimer2()
+        }
+    }
+    func runTimer2() {
+        timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer2)), userInfo: nil, repeats: true)
+        isTimerRunning2 = true
+    }
+    @objc func updateTimer2() {
+        if seconds2 < 1 {
+            timer2.invalidate()
+            self.performSegue(withIdentifier: "resultsSegue", sender: nil)
+        } else {
+            seconds2 -= 1
+            timerLabel2.text = timeString(time: TimeInterval(seconds2))
+            timerLabel2.text = String(seconds2)
         }
     }
     
