@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var timerLabel: UILabel!
     var seconds = 60
     var timer = Timer()
     var isTimerRunning = false
