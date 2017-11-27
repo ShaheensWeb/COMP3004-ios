@@ -29,12 +29,14 @@ class ViewController: UIViewController {
     @objc func updateTimer() {
         if seconds < 1 {
             timer.invalidate()
+            self.performSegue(withIdentifier: "timerEndSegue", sender: nil)
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
             timerLabel.text = String(seconds)
         }
     }
+    
     func timeString(time:TimeInterval) -> String {
         let hours = Int(time) / 3600
         let minutes = Int(time) / 60 % 60
