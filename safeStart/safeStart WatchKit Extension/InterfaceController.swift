@@ -9,7 +9,7 @@
 import WatchKit
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate {
+class InterfaceController: WKInterfaceController{
     @IBOutlet var heartRateLabel: WKInterfaceLabel!
     @IBOutlet var controlButton: WKInterfaceButton!
     
@@ -32,10 +32,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }
     }
 
-    func session(_ session: WCSession,
-                 activationDidCompleteWith activationState: WCSessionActivationState,
-                 error: Error?){
-    }
 }
 
 extension InterfaceController: WorkoutManagerDelegate {
