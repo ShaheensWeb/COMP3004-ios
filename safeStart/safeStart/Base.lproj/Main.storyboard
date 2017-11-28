@@ -69,11 +69,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXC-Pq-U14">
-                                <rect key="frame" x="147" y="348" width="80" height="30"/>
+                                <rect key="frame" x="147" y="348" width="80" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Yes"/>
                                 <connections>
-                                    <segue destination="MYy-hc-fjv" kind="show" id="ie2-5L-QHQ"/>
+                                    <segue destination="MYy-hc-fjv" kind="show" id="ULa-F8-T1U"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Are you of age to consume alcohol in the country you are taking this test?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDY-vl-UhV">
@@ -286,7 +286,7 @@
         <!--View Controller-->
         <scene sceneID="SCl-zd-Fzn">
             <objects>
-                <viewController id="Cnd-11-gWd" sceneMemberID="viewController">
+                <viewController id="Cnd-11-gWd" customClass="ViewController" customModule="safeStart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DB0-yl-MGC"/>
                         <viewControllerLayoutGuide type="bottom" id="DgW-lS-YWe"/>
@@ -297,13 +297,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample 1 average heartrate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-1p-yE0">
                                 <rect key="frame" x="39" y="153" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-Ym-hMy">
-                                <rect key="frame" x="300" y="153" width="25" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -346,9 +339,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-Ym-hMy">
+                                <rect key="frame" x="298" y="153" width="25" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="finalHeartRate1" destination="wdb-Ym-hMy" id="PIR-c1-dwD"/>
+                        <outlet property="finalHeartRate2" destination="w5M-Sf-KQc" id="rBf-eL-G49"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10p-jw-fGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,7 +361,7 @@
         <!--View Controller-->
         <scene sceneID="NPJ-yC-pL2">
             <objects>
-                <viewController id="MYy-hc-fjv" sceneMemberID="viewController">
+                <viewController id="MYy-hc-fjv" customClass="ViewController" customModule="safeStart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="piw-AH-fl5"/>
                         <viewControllerLayoutGuide type="bottom" id="fcz-Wk-LaM"/>
@@ -443,84 +447,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xT-Sy-uVE">
-                                <rect key="frame" x="286" y="0.0" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-Nq-rtu">
+                                <rect key="frame" x="272" y="20" width="74" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mock Data"/>
                                 <connections>
-                                    <segue destination="NH2-oZ-vyq" kind="show" id="3RD-mt-voQ"/>
+                                    <action selector="displayAction:" destination="MYy-hc-fjv" eventType="touchUpInside" id="EIw-Pq-kD0"/>
+                                    <action selector="displayAction:" destination="CoD-k6-SKO" eventType="touchUpInside" id="Wh8-MD-XxY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lKw-qA-kFa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRQ-r1-rqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CoD-k6-SKO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2512.8000000000002" y="-179.46026986506749"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="HDp-mX-2JD">
-            <objects>
-                <viewController id="NH2-oZ-vyq" customClass="ViewController" customModule="safeStart" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="91w-pf-91n"/>
-                        <viewControllerLayoutGuide type="bottom" id="eL2-yI-5ir"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gzR-VN-Vir">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heart Rate 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAB-cd-v0W">
-                                <rect key="frame" x="54" y="133" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heart Rate 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIW-dW-8hQ">
-                                <rect key="frame" x="54" y="205" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4K-mn-uwE">
-                                <rect key="frame" x="200" y="200" width="168" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-3l-6ty">
-                                <rect key="frame" x="145" y="302" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit Data"/>
-                                <connections>
-                                    <action selector="submitDataButton:" destination="NH2-oZ-vyq" eventType="touchUpInside" id="cXb-ND-2Ef"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r69-Og-scl">
-                                <rect key="frame" x="200" y="133" width="168" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="submitDataButton:" destination="NH2-oZ-vyq" eventType="editingDidEnd" id="6ht-Qt-gDz"/>
-                                </connections>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="labelHeartRate1" destination="r69-Og-scl" id="fNH-jV-HkG"/>
-                        <outlet property="labelHeartRate2" destination="n4K-mn-uwE" id="nXF-Vw-UV4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wxo-vq-6Va" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3532" y="-476.31184407796104"/>
+            <point key="canvasLocation" x="3191.1999999999998" y="-179.46026986506749"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pqC-at-YKV">
@@ -564,11 +508,30 @@
             </objects>
             <point key="canvasLocation" x="1808.8" y="574.36281859070471"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ee3-Jt-wWs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqG-SN-Yke" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hm6-uX-4M7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MYy-hc-fjv" kind="relationship" relationship="rootViewController" id="dpb-Tr-cjq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JdL-Ic-IwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460" y="-238"/>
+        </scene>
     </scenes>
     <resources>
         <image name="alcoholic" width="2400" height="1807"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BAV-Oq-mz3"/>
+        <segue reference="ULa-F8-T1U"/>
+        <segue reference="h8R-NM-GTl"/>
     </inferredMetricsTieBreakers>
 </document>
