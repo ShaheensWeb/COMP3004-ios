@@ -7,17 +7,38 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController, WCSessionDelegate {
+    func sessionDidBecomeInactive(_ session: WCSession){
+        
+    }
+    func sessionDidDeactivate(_ session: WCSession){
+        
+    }
+    func session(_ session: WCSession,
+                 activationDidCompleteWith activationState: WCSessionActivationState,
+                 error: Error?){
+    }
     @IBOutlet weak var timerLabel: UILabel!
-    var seconds = 60
+    var seconds = 3
     var timer = Timer()
     var isTimerRunning = false
-    
+    var lastMessage: CFAbsoluteTime = 0
     @IBAction func startButtonTapped(_ sender: Any) {
         if isTimerRunning == false {
+            if WCSession.isSupported() { // check if the device support to handle an Apple Watch
+                let session = WCSession.default()
+                session.delegate = self
+                session.activate() // activate the session
+                
+                if session.isPaired { // Check if the iPhone is paired with the Apple Watch
+                    sendWatchMessage()
+                    print("hi")
+                }
+            }
             runTimer()
+            //.setTitle(newState.actionText())
         }
     }
     func runTimer() {
@@ -36,7 +57,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var timerLabel2: UILabel!
-    var seconds2 = 180
+    var seconds2 = 5
     var timer2 = Timer()
     var isTimerRunning2 = false
     
@@ -74,5 +95,24 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func sendWatchMessage() {
+        let currentTime = CFAbsoluteTimeGetCurrent()
+        
+        // if less than half a second has passed, bail out
+        if lastMessage + 0.5 > currentTime {
+            return
+        }
+        
+        // send a message to the watch if it's reachable
+        if (WCSession.default().isReachable) {
+            // this is a meaningless message, but it's enough for our purposes
+            let message = ["Message": "Hello"]
+            WCSession.default().sendMessage(message, replyHandler: nil)
+        }
+        
+        // update our rate limiting property
+        lastMessage = CFAbsoluteTimeGetCurrent()
     }
 }

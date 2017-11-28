@@ -7,8 +7,9 @@
 //
 
 import WatchKit
+import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     
     @IBOutlet var heartRateLabel: WKInterfaceLabel!
@@ -19,6 +20,11 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         workoutManager.delegate = self
+        if WCSession.isSupported() { // check if the device support to handle an Apple Watch
+            let session = WCSession.default
+            session.delegate = self
+            session.activate() // activate the session
+        }
     }
     
     @IBAction func didTapButton() {
@@ -32,6 +38,11 @@ class InterfaceController: WKInterfaceController {
             workoutManager.start()
             break
         }
+    }
+
+    func session(_ session: WCSession,
+                 activationDidCompleteWith activationState: WCSessionActivationState,
+                 error: Error?){
     }
 }
 

@@ -8,15 +8,15 @@
 
 import UIKit
 import HealthKit
-import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate{
     
     private let healthStore = HKHealthStore()
     
     var window: UIWindow?
-        
+    var lastMessage: CFAbsoluteTime = 0
+
     private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true
     }
@@ -25,15 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate{
         // Authorize access to health data for watch.
         healthStore.handleAuthorizationForExtension { success, error in
             print(success)
-        }
-        if WCSession.isSupported() { // check if the device support to handle an Apple Watch
-            let session = WCSession.default()
-            session.delegate = self
-            session.activate() // activate the session
-            
-            if session.isPaired { // Check if the iPhone is paired with the Apple Watch
-                // Do stuff
-            }
         }
     }
 
@@ -57,17 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate{
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession){
-    
-    }
-    func sessionDidDeactivate(_ session: WCSession){
-    
-    }
-    func session(_ session: WCSession,
-                 activationDidCompleteWith activationState: WCSessionActivationState,
-                 error: Error?){
     }
 }
 
