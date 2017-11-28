@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     private let healthStore = HKHealthStore()
     
     var window: UIWindow?
-    var lastMessage: CFAbsoluteTime = 0
 
     private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true

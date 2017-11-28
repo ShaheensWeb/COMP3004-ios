@@ -7,10 +7,12 @@
 //
 
 import UIKit
-import WatchConnectivity
+//import WatchConnectivity
 
-class ViewController: UIViewController, WCSessionDelegate {
-    func sessionDidBecomeInactive(_ session: WCSession){
+class ViewController: UIViewController/*, WCSessionDelegate - wc session attempt :( */{
+    /*
+     Code here was an attempt at WCSession
+     func sessionDidBecomeInactive(_ session: WCSession){
         
     }
     func sessionDidDeactivate(_ session: WCSession){
@@ -19,28 +21,19 @@ class ViewController: UIViewController, WCSessionDelegate {
     func session(_ session: WCSession,
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?){
-    }
+    }*/
     @IBOutlet weak var timerLabel: UILabel!
     var seconds = 3
     var timer = Timer()
     var isTimerRunning = false
-    var lastMessage: CFAbsoluteTime = 0
+    //var lastMessage: CFAbsoluteTime = 0
     var heartRate1 = 0
     var heartRate2 = 0
-    @IBOutlet weak var labelHeartRate1: UITextField!
-    @IBOutlet weak var labelHeartRate2: UITextField!
-    
-    @IBAction func submitDataButton(_ sender: Any) {
-        print("boooo")
-        let heartRate1 :Int? = Int(labelHeartRate1.text!)
-        let heartRate2 :Int? = Int(labelHeartRate2.text!)
-        print("Here %d %d", (heartRate1, heartRate2))
-    }
-    
-    
+   
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if isTimerRunning == false {
+            /*
             if WCSession.isSupported() { // check if the device support to handle an Apple Watch
                 let session = WCSession.default()
                 session.delegate = self
@@ -50,7 +43,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                     sendWatchMessage()
                     print("hi")
                 }
-            }
+            } Not working WCSessionDelegate session instantiazation.  */
             runTimer()
             //.setTitle(newState.actionText())
         }
@@ -113,7 +106,8 @@ class ViewController: UIViewController, WCSessionDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func sendWatchMessage() {
+    /* Failed attempt at watch communication
+     func sendWatchMessage() {
         let currentTime = CFAbsoluteTimeGetCurrent()
         
         // if less than half a second has passed, bail out
@@ -130,5 +124,5 @@ class ViewController: UIViewController, WCSessionDelegate {
         
         // update our rate limiting property
         lastMessage = CFAbsoluteTimeGetCurrent()
-    }
+    }*/
 }
