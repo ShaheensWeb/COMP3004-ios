@@ -249,16 +249,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-jm-YGG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-jm-YGG">
                                 <rect key="frame" x="170" y="588" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButtonTapped2:" destination="ui6-9m-bzx" eventType="touchUpInside" id="fbc-lr-6QB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIJ-wV-2gq">
-                                <rect key="frame" x="56" y="85" width="262.5" height="111"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIJ-wV-2gq">
+                                <rect key="frame" x="56" y="85" width="263" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="i8a-rx-eUS"/>
                                 </constraints>
@@ -268,6 +267,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SIJ-wV-2gq" firstAttribute="centerX" secondItem="7lh-jm-YGG" secondAttribute="centerX" id="QQN-bM-5MW"/>
+                            <constraint firstItem="SIJ-wV-2gq" firstAttribute="centerX" secondItem="eLP-Fx-fkQ" secondAttribute="centerX" id="SpW-dA-JJc"/>
+                            <constraint firstItem="ADI-sc-XCG" firstAttribute="top" secondItem="7lh-jm-YGG" secondAttribute="bottom" constant="49" id="eOj-JJ-wuK"/>
+                            <constraint firstItem="SIJ-wV-2gq" firstAttribute="top" secondItem="d6P-vi-3ZK" secondAttribute="bottom" constant="65" id="pYd-q7-gwr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="timerLabel2" destination="SIJ-wV-2gq" id="CuF-cU-oF3"/>
