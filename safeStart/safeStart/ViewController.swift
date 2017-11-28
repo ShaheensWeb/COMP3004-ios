@@ -25,6 +25,17 @@ class ViewController: UIViewController, WCSessionDelegate {
     var timer = Timer()
     var isTimerRunning = false
     var lastMessage: CFAbsoluteTime = 0
+    var heartRate1 = 0
+    var heartRate2 = 0
+    @IBOutlet weak var labelHeartRate1: UITextField!
+    @IBOutlet weak var labelHeartRate2: UITextField!
+    
+    @IBAction func submitDataButton(_ sender: Any) {
+        print("boooo")
+        let heartRate1 :Int? = Int(labelHeartRate1.text!)
+        let heartRate2 :Int? = Int(labelHeartRate2.text!)
+        print("Here %d %d", (heartRate1, heartRate2))
+    }
     
     @IBAction func startButtonTapped(_ sender: Any) {
         if isTimerRunning == false {
