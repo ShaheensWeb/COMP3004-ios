@@ -25,6 +25,7 @@ class ViewController: UIViewController, WCSessionDelegate {
     var timer = Timer()
     var isTimerRunning = false
     var lastMessage: CFAbsoluteTime = 0
+    
     @IBAction func startButtonTapped(_ sender: Any) {
         if isTimerRunning == false {
             if WCSession.isSupported() { // check if the device support to handle an Apple Watch
