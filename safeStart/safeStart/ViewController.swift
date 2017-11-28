@@ -37,7 +37,9 @@ class ViewController: UIViewController, WCSessionDelegate {
         print("Here %d %d", (heartRate1, heartRate2))
     }
     
-    @IBAction func startButtonTapped(_ sender: Any) {
+    
+    
+    @IBAction func startButtonTapped(_ sender: UIButton) {
         if isTimerRunning == false {
             if WCSession.isSupported() { // check if the device support to handle an Apple Watch
                 let session = WCSession.default()
@@ -52,6 +54,7 @@ class ViewController: UIViewController, WCSessionDelegate {
             runTimer()
             //.setTitle(newState.actionText())
         }
+        sender.isHidden = true
     }
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
@@ -73,10 +76,11 @@ class ViewController: UIViewController, WCSessionDelegate {
     var timer2 = Timer()
     var isTimerRunning2 = false
     
-    @IBAction func startButtonTapped2(_ sender: Any) {
+    @IBAction func startButtonTapped2(_ sender: UIButton) {
         if isTimerRunning2 == false {
             runTimer2()
         }
+        sender.isHidden = true
     }
     func runTimer2() {
         timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer2)), userInfo: nil, repeats: true)
