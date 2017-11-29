@@ -14,8 +14,6 @@
 		BB444C261FA7F24400BBDC9B /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C251FA7F24400BBDC9B /* HeartRate.swift */; };
 		BB444C281FA7F28400BBDC9B /* hkunitbpm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C271FA7F28400BBDC9B /* hkunitbpm.swift */; };
 		BB444C2A1FA7F35000BBDC9B /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB444C291FA7F35000BBDC9B /* AuthorizationManager.swift */; };
-		BB4CED6C1FCE0CAB005FF783 /* MockHeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4CED6A1FCE0CAB005FF783 /* MockHeartRate.swift */; };
-		BB4CED6D1FCE0CAB005FF783 /* MockHeartRate.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4CED6B1FCE0CAB005FF783 /* MockHeartRate.xib */; };
 		BB600DF61FA7959A00C5EF70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */; };
 		BB600DF81FA7959A00C5EF70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB600DF71FA7959A00C5EF70 /* ViewController.swift */; };
 		BB600DFB1FA7959A00C5EF70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB600DF91FA7959A00C5EF70 /* Main.storyboard */; };
@@ -93,14 +91,11 @@
 		BB01A3BC1FA8272C00311F5F /* safeStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = safeStart.entitlements; sourceTree = "<group>"; };
 		BB01A3BD1FA8272C00311F5F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BB444C1D1FA7EFDD00BBDC9B /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
-		BB444C1F1FA7F12000BBDC9B /* safeStart WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "safeStart WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		BB444C211FA7F12000BBDC9B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB444C231FA7F1F300BBDC9B /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
 		BB444C251FA7F24400BBDC9B /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
 		BB444C271FA7F28400BBDC9B /* hkunitbpm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hkunitbpm.swift; sourceTree = "<group>"; };
 		BB444C291FA7F35000BBDC9B /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
-		BB4CED6A1FCE0CAB005FF783 /* MockHeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeartRate.swift; sourceTree = "<group>"; };
-		BB4CED6B1FCE0CAB005FF783 /* MockHeartRate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MockHeartRate.xib; sourceTree = "<group>"; };
 		BB600DF21FA7959A00C5EF70 /* safeStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safeStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB600DF71FA7959A00C5EF70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,15 +165,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB4CED671FCE0C1E005FF783 /* mockHeartRate */ = {
-			isa = PBXGroup;
-			children = (
-				BB4CED6A1FCE0CAB005FF783 /* MockHeartRate.swift */,
-				BB4CED6B1FCE0CAB005FF783 /* MockHeartRate.xib */,
-			);
-			path = mockHeartRate;
-			sourceTree = "<group>";
-		};
 		BB600DE91FA7959900C5EF70 = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +196,6 @@
 				BB01A3BC1FA8272C00311F5F /* safeStart.entitlements */,
 				BB600DF51FA7959A00C5EF70 /* AppDelegate.swift */,
 				BB600DF71FA7959A00C5EF70 /* ViewController.swift */,
-				BB4CED671FCE0C1E005FF783 /* mockHeartRate */,
 				BB600DF91FA7959A00C5EF70 /* Main.storyboard */,
 				BB600DFC1FA7959A00C5EF70 /* Assets.xcassets */,
 				BB600DFE1FA7959A00C5EF70 /* LaunchScreen.storyboard */,
@@ -231,7 +216,6 @@
 		BB600E141FA7959A00C5EF70 /* safeStartUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BB444C1F1FA7F12000BBDC9B /* safeStart WatchKit Extension.entitlements */,
 				BB600E151FA7959A00C5EF70 /* safeStartUITests.swift */,
 			);
 			path = safeStartUITests;
@@ -412,7 +396,7 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4GZAW9UKYC;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes.watchos.extension = {
 								enabled = 1;
@@ -451,7 +435,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4CED6D1FCE0CAB005FF783 /* MockHeartRate.xib in Resources */,
 				BB600E001FA7959A00C5EF70 /* LaunchScreen.storyboard in Resources */,
 				BB600DFD1FA7959A00C5EF70 /* Assets.xcassets in Resources */,
 				BB600DFB1FA7959A00C5EF70 /* Main.storyboard in Resources */,
@@ -496,7 +479,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4CED6C1FCE0CAB005FF783 /* MockHeartRate.swift in Sources */,
 				BB600DF81FA7959A00C5EF70 /* ViewController.swift in Sources */,
 				BB600DF61FA7959A00C5EF70 /* AppDelegate.swift in Sources */,
 			);
@@ -698,11 +680,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "safeStart WatchKit Extension/safeStart WatchKit Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4GZAW9UKYC;
 				INFOPLIST_FILE = "safeStart WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CARLETON.safeStart.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "61cc7b8d-94cc-46a0-94f8-cedb7bbf29ac";
+				PROVISIONING_PROFILE_SPECIFIER = safeStartExtension;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -717,11 +703,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "safeStart WatchKit Extension/safeStart WatchKit Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4GZAW9UKYC;
 				INFOPLIST_FILE = "safeStart WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CARLETON.safeStart.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "61cc7b8d-94cc-46a0-94f8-cedb7bbf29ac";
+				PROVISIONING_PROFILE_SPECIFIER = safeStartExtension;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
