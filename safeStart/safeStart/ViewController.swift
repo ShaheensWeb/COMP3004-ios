@@ -22,8 +22,6 @@ class ViewController: UIViewController {
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?){
     }*/
-    @IBOutlet weak var finalHeartRate1: UILabel!
-    @IBOutlet weak var finalHeartRate2: UILabel!
     @IBOutlet var hr1 :UITextField!
     @IBOutlet var hr2 :UITextField!
     
@@ -44,35 +42,6 @@ class ViewController: UIViewController {
     func segueFailed(){
         self.performSegue(withIdentifier: "failed", sender: self)
     }
-    
-    
-    var heartRateInput1: UITextField?
-    var heartRateInput2: UITextField?
-    
-    func heartRateInput1(heartRateGiven1: UITextField){
-        heartRateInput1 = heartRateGiven1
-        heartRateInput1?.placeholder = "Heart rate phase 1 input"
-    }
-    
-    func heartRateInput2(heartRateGiven2: UITextField){
-        heartRateInput2 = heartRateGiven2
-        heartRateInput2?.placeholder = "Heart rate phase 2 input"
-    }
-   
-    @IBAction func displayAction(_ sender: Any) {
-        let alertController = UIAlertController(title: "Give mock data for heart rate",
-                                                message: nil,
-                                                preferredStyle: .alert)
-        alertController.addTextField(configurationHandler:  heartRateInput1)
-        alertController.addTextField(configurationHandler:  heartRateInput2)
-        
-        let submitDataHandler = UIAlertAction(title: "Submit data", style: .default, handler: self.submitDataHandler)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertController.addAction(submitDataHandler)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true)
-    }
    
     @IBOutlet weak var timerLabel: UILabel!
     var seconds = 3
@@ -80,15 +49,10 @@ class ViewController: UIViewController {
     var isTimerRunning = false
     //var lastMessage: CFAbsoluteTime = 0
     
-    func submitDataHandler(alert: UIAlertAction){
-        let MockData = MockHeartRate()
-        MockData.customInit(heartRate1: (heartRateInput1?.text)!, heartRate2: (heartRateInput2?.text)!)
-        self.navigationController?.pushViewController(MockData, animated: true)
-    }
-    
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if isTimerRunning == false {
             /*
+             part of failed attempt at using watchconnectivity
             if WCSession.isSupported() { // check if the device support to handle an Apple Watch
                 let session = WCSession.default()
                 session.delegate = self
