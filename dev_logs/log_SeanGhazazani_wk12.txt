@@ -1,0 +1,9 @@
+Week 12 Text- 
+
+Still cant get WatchConnectivity to work and its another 3am coding night, I feel like because of our lack of development
+power I really over-scoped what we were capable of in 4 months due to the loss of 2 team members. 
+
+Other then that the formula worked, the timers are polished, I polished the images putting a X, checkmark, and new
+front UI facing image that I believe looks more polished.
+
+D4 presentations tomorrow morning, we did our very best and I hope thats noted throughout our logs as just 2 members. 

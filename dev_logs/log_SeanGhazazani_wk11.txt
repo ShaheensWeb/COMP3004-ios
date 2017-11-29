@@ -1,0 +1,12 @@
+Week 11 Text- 
+
+In the attempt to match the development analysis presented in D1 I tried super super hard along with James
+to get WatchConnectivity to work (this is confirmable because I literally left the code commented out in the
+view controller for both mobile/iwatch) and no matter what we did we couldnt get over a simple bug that Stackoverflow
+after countless threads couldn't resolve only a week old. Once again Watch OS 4.0 has busted functionality and were lost.
+
+Aside from that we got the UI flushed a bit better, we created final pages aka the result pages, and because
+of the watch connectivity bug began developing a MockData button to possibly mock heart rate 1 and 2 for
+phases 1 and 2 respectively for demo, also James got the timers functioning again and were getting closer to D4 demos!
+
+See you next week
