@@ -22,9 +22,30 @@ class ViewController: UIViewController {
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?){
     }*/
-    
     @IBOutlet weak var finalHeartRate1: UILabel!
     @IBOutlet weak var finalHeartRate2: UILabel!
+    @IBOutlet var hr1 :UITextField!
+    @IBOutlet var hr2 :UITextField!
+    
+    @IBAction func submitHR(_ sender: Any) {
+        let num1 = (hr1.text! as NSString).integerValue
+        let num2 = (hr2.text! as NSString).integerValue
+        
+        if num1 > num2 {
+            seguePassed()
+        }else{
+            segueFailed()
+        }
+    }
+    
+    func seguePassed(){
+        self.performSegue(withIdentifier: "passed", sender: self)
+    }
+    func segueFailed(){
+        self.performSegue(withIdentifier: "failed", sender: self)
+    }
+    
+    
     var heartRateInput1: UITextField?
     var heartRateInput2: UITextField?
     
@@ -37,7 +58,7 @@ class ViewController: UIViewController {
         heartRateInput2 = heartRateGiven2
         heartRateInput2?.placeholder = "Heart rate phase 2 input"
     }
-    
+   
     @IBAction func displayAction(_ sender: Any) {
         let alertController = UIAlertController(title: "Give mock data for heart rate",
                                                 message: nil,
