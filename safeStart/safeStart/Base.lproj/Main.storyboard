@@ -388,10 +388,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0YS-B6-Tir">
-                                <rect key="frame" x="70" y="182" width="240" height="133"/>
+                                <rect key="frame" x="70" y="182" width="240" height="183.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This result of this test indicate that you do not have a genetic predisposition to alcoholism. This does not definitively mean you do not, it only indicates that. You should still use alcohol with caution and at your own risk.</string>
+                                <string key="text">The result of this test is that your heartrate was not significantly increased after the consuption of alcohol. This indicates that you do not have a genetic predisposition to alcoholism. This does not definitively mean you do not, it only indicates that. Regardless of this you should still use alcohol with caution and at your own risk.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -529,10 +529,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YCF-pW-B5I">
-                                <rect key="frame" x="67" y="171" width="240" height="133"/>
+                                <rect key="frame" x="67" y="171" width="240" height="183.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This result of this test indicates that you may have a genetic predisposition to alcoholism. This does not definitively mean you do, it only indicates that. You should use alcohol with caution and at your own risk.</string>
+                                <string key="text">This result of this test was that your heart rate was significantly increased after the consuption of alcohol. This indicates that you may have a genetic predisposition to alcoholism. This does not definitively mean you do, it only indicates that. You should use alcohol with caution and at your own risk.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

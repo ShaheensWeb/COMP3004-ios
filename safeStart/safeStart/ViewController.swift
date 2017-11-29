@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     @IBOutlet var hr2 :UITextField!
     
     @IBAction func submitHR(_ sender: Any) {
-        let num1 = (hr1.text! as NSString).integerValue
-        let num2 = (hr2.text! as NSString).integerValue
+        let num1 = (hr1.text! as NSString).doubleValue
+        let num2 = (hr2.text! as NSString).doubleValue
         
-        if num1 > num2 {
+        if (num1 * 1.18) >= num2 {
             seguePassed()
         }else{
             segueFailed()
